@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sanjana Mohapatra | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --accent: #4caf50;
+    }
+    /* Global layout */
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* horizontally center everything except the full‑width header */
+      background: #f5f5f5;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    /* Header always stays at the very top */
+    header {
+      background: var(--accent);
+      width: 100%;
+      padding: 2rem 1rem;
+      color: #fff;
+    }
+    h1 { margin: 0; font-size: 2.5rem; }
+    h2 { margin: 0.5rem 0 0; font-weight: 400; }
+
+    /* Profile section */
+    .profile {
+      margin-top: 2rem;
+    }
+    .profile img {
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .profile p {
+      max-width: 500px;
+      margin: 1.5rem auto;
+      font-size: 1.25rem;
+      color: #333;
+      line-height: 1.4;
+    }
+
+    /* Links section as a green horizontal bar */
+    .links {
+      margin: 1rem 0 3rem;
+      background: var(--accent);
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      justify-content: center;
+    }
+    .links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 8rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .links li { margin: 0; }
+    .links a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top‑aligned header -->
+  <header>
+    <h1>Sanjana Mohapatra</h1>
+    <h2>Professional Portfolio</h2>
+    <h2>AI/ML Experience</h2>
+  </header>
+
+  <!-- Profile block -->
+  <section class="profile">
+    <img src="assets/img/profile.jpg" alt="Sanjana Mohapatra">
+    <p>
+      Masters<br>Computer Information Systems, AI Specialization<br>
+      Indiana Wesleyan University
+    </p>
+  </section>
+
+  <!-- Navigation / artifacts list -->
+  <section class="links">
+    <ul>
+      <li><a href="_layouts/about.html">About me</a></li>
+      <li><a href="_layouts/week1.html">Week 1 artifacts</a></li>
+      <li><a href="_layouts/week2.html">Week 2 artifacts</a></li>
+      <li><a href="_layouts/week3.html">Week 3 artifacts</a></li>
+      <li><a href="_layouts/week4.html">Week 4 artifacts</a></li>
+    </ul>
+  </section>
+</body>
+</html>

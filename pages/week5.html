@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Research AI Tool – STORM AI | Sanjana Mohapatra</title>
+  <title>AI Chatbot – Week 4 Artifact | Sanjana Mohapatra</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     :root{ --accent:#4caf50; }
@@ -79,14 +79,14 @@
       color:#333;
     }
     .photo{
-      flex:1 1 600px;
+      flex:1 1 500px;
       display:flex;
       justify-content:center;
       align-items:flex-start;
     }
     .photo img{
       width:100%;
-      max-width:1000px;
+      max-width:700px;
       border-radius:8px;
       object-fit:cover;
       box-shadow:0 4px 10px rgba(0,0,0,.1);
@@ -98,7 +98,7 @@
   <!-- header with home dropdown -->
   <header>
     <div class="dropdown">
-      <!-- icon just toggles menu -->
+      <!-- icon toggles menu -->
       <a class="home-btn" href="#">
         <img src="../assets/img/home.png" alt="Home">
       </a>
@@ -110,22 +110,29 @@
         <a href="week2.html">Week 2 Artifact</a>
         <a href="week3.html">Week 3 Artifact</a>
         <a href="week4.html">Week 4 Artifact</a>
+        <a href="week5.html">Week 5 Artifact</a>
       </div>
     </div>
 
-    <h1>Research AI Tool – STORM AI</h1>
+    <h1>AI-based Chatbot</h1>
   </header>
 
   <main class="content">
     <div class="text">
-      <p><b>Tools:</b> STORM AI, Canva</p>
-      <p><b>Objective:</b> Understand the STORM AI brainstorming workflow used to create a research article on a given topic.</p>
-      <p><b>Process:</b> STORM AI generated both the article and a record of its brainstorming steps. I converted that process into a flowchart.</p>
-      <p><b>Value Proposition:</b> Reveals the personas and stages involved in conducting structured AI-assisted research.</p>
+      <p><b>Tools:</b> Song Maker Custom GPT</p>
+      <p><b>Objective:</b> To explore how a simple lyrical concept, a love triangle, can be transformed into diverse musical interpretations using AI. The session aimed to create and refine a multi-version song through iterative, creative collaboration with GPT, showcasing how AI can support songwriting without requiring music production skills.</p>
+      <p><b>Process:</b> The session began with a classic guitar love ballad prompt, evolving through user-driven iterations such as piano adaptation, minor key transformation, and emotional tone adjustments. GPT dynamically revised lyrics and chords to match each new vision, including a version where the three characters are unaware of each other and a final shift to reggae dancehall style. Each change reflected user input and GPT’s creative flexibility, culminating in distinct yet thematically cohesive songs.</p>
+      <p><b>Value Proposition:</b> This session illustrates GPT’s value as a collaborative music creation tool that enables anyone—regardless of technical skill—to explore complex emotional themes, genre shifts, and narrative variations. By generating lyrics, music, and rationale behind artistic choices, GPT empowers users to participate meaningfully in the songwriting process, making music production more accessible, iterative, and creatively fulfilling.</p>
     </div>
 
     <div class="photo">
-      <img src="../assets/img/STORM AI.png" alt="STORM AI flowchart">
+      <img src="../assets/img/song1.png" alt="Song Maker Custom GPT 1">
+    </div>
+    <div class="photo">
+      <img src="../assets/img/song2.png" alt="Song Maker Custom GPT 2">
+    </div>
+    <div class="photo">
+      <img src="../assets/img/song3.png" alt="Song Maker Custom GPT 3">
     </div>
   </main>
 
@@ -136,12 +143,12 @@
     const toggle   = document.querySelector('.home-btn');
 
     toggle.addEventListener('click', e=>{
-      e.preventDefault();          // stop "#" navigation
+      e.preventDefault();              // keep page from navigating
       menu.classList.toggle('open');
     });
 
     document.addEventListener('click', e=>{
-      if(!dropdown.contains(e.target)){   // clicked outside
+      if(!dropdown.contains(e.target)){ // clicked outside dropdown
         menu.classList.remove('open');
       }
     });
